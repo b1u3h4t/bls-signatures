@@ -24,7 +24,7 @@ set(CMAKE_MODULE_PATH
 
 # Make sure to statically link libsodium when building wheels on ci
 if(DEFINED ENV{CIBUILDWHEEL})
-  set(sodium_USE_STATIC_LIBS TRUE)
+  set(sodium_USE_STATIC_LIBS FALSE)
   message("libsodium will be statically linked because $CIBUILDWHEEL is defined.")
 endif()
 
