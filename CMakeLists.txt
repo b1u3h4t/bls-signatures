@@ -28,7 +28,7 @@ if(DEFINED ENV{CIBUILDWHEEL})
   message("libsodium will be statically linked because $CIBUILDWHEEL is defined.")
 endif()
 
-find_package(sodium)
+## find_package(sodium)
 if (SODIUM_FOUND)
   message(STATUS "Found libsodium")
   message(STATUS "Sodium include dir = ${sodium_INCLUDE_DIR}")
